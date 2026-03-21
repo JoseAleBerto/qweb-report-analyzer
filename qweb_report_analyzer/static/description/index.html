@@ -1,43 +1,37 @@
 <!-- QWeb Report Analyzer - Odoo App Store Product Page -->
 
 <!-- HERO -->
-<section class="container py-5 text-center" style="background-color:#4C1D95; border-radius:8px;">
-    <div class="row">
-        <div class="col-12">
-            <h1 style="color:#ffffff; font-size:32px; font-weight:800;">
-                QWeb Report Analyzer
-            </h1>
-            <p style="color:#DDD6FE; font-size:18px;">
-                Instantly understand any Odoo report &mdash; base views, inherited views,
-                t-calls, XPaths, and module origins. One click. No server. Free.
-            </p>
-            <p style="background-color:#22C55E; color:#ffffff; font-size:16px; font-weight:700; display:inline-block; padding:8px 24px; border-radius:50px;">
-                Free &amp; Open Source &mdash; No license key required
-            </p>
-        </div>
+<section class="oe_container">
+    <div class="oe_row oe_spaced" style="text-align:center; padding:32px 16px; background:#4C1D95; border-radius:8px;">
+        <h1 style="color:#ffffff; font-size:32px; font-weight:800; margin:0 0 12px 0;">
+            QWeb Report Analyzer
+        </h1>
+        <p style="color:#DDD6FE; font-size:18px; margin:0 0 20px 0;">
+            Instantly understand any Odoo report. Base views, inherited views,
+            t-calls, XPaths, and module origins. One click. No server. Free.
+        </p>
+        <p style="color:#ffffff; font-size:16px; font-weight:700; background:#22C55E; display:inline-block; padding:8px 24px; border-radius:50px; margin:0;">
+            Free &amp; Open Source &mdash; No license key required
+        </p>
     </div>
 </section>
 
 <!-- PAIN POINTS -->
-<section class="container py-4">
-    <div class="row text-center">
-        <div class="col-12">
-            <h2 style="color:#4C1D95;">Sound familiar?</h2>
-        </div>
-    </div>
-    <div class="row text-center mt-4">
-        <div class="col-md-4 mb-3">
-            <p style="font-size:40px;">&#x1F914;</p>
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#4C1D95;">Sound familiar?</h2>
+        <div class="oe_span4" style="text-align:center; padding:16px;">
+            <p style="font-size:40px; margin:0 0 8px 0;">&#x1F914;</p>
             <h4>&quot;Which module is overriding my report?&quot;</h4>
             <p>You have 8 modules installed and something is breaking your invoice PDF. You have no idea where to start.</p>
         </div>
-        <div class="col-md-4 mb-3">
-            <p style="font-size:40px;">&#x1F575;</p>
+        <div class="oe_span4" style="text-align:center; padding:16px;">
+            <p style="font-size:40px; margin:0 0 8px 0;">&#x1F575;</p>
             <h4>&quot;Where does this field come from?&quot;</h4>
             <p>A value appears in the printout but you cannot find it in the main view. It could be inherited from anywhere.</p>
         </div>
-        <div class="col-md-4 mb-3">
-            <p style="font-size:40px;">&#x23F1;</p>
+        <div class="oe_span4" style="text-align:center; padding:16px;">
+            <p style="font-size:40px; margin:0 0 8px 0;">&#x23F1;</p>
             <h4>&quot;I have spent 3 hours on this report&quot;</h4>
             <p>Manually tracing t-calls and inherit_ids through the database. There has to be a better way.</p>
         </div>
@@ -45,29 +39,21 @@
 </section>
 
 <!-- SOLUTION -->
-<section class="container py-4 text-center">
-    <div class="row">
-        <div class="col-12">
-            <h2 style="color:#4C1D95;">Get the full picture in one click</h2>
-            <p style="font-size:18px;">
-                Select any report &rarr; <strong>Action &rarr; Analyze Report Views</strong> &rarr; download a .txt file with the complete dependency map.
-            </p>
-        </div>
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#4C1D95;">Get the full picture in one click</h2>
+        <p style="font-size:18px; text-align:center;">
+            Select any report &rarr; <strong>Action &rarr; Analyze Report Views</strong> &rarr; download a .txt file with the complete dependency map.
+        </p>
     </div>
 </section>
 
 <!-- CODE SAMPLE -->
-<section class="container py-4">
-    <div class="row">
-        <div class="col-12 text-center">
-            <h3 style="color:#4C1D95;">Sample output</h3>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <table width="100%" style="background-color:#1E1B4B; border-radius:8px;">
-                <tr>
-                    <td style="padding:20px; color:#E0E7FF; font-family:monospace; font-size:13px; white-space:pre; line-height:1.7;">[REPORT] stock.report_delivery_document
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h3 style="text-align:center; color:#4C1D95;">Sample output</h3>
+        <table style="width:100%; border-collapse:collapse; font-family:monospace; font-size:13px; background:#1E1B4B; color:#E0E7FF; border-radius:8px; padding:16px;">
+            <tr><td style="padding:16px; white-space:pre-wrap; line-height:1.7;">[REPORT] stock.report_delivery_document
     Module: stock
 
 +-- stock.report_delivery_document_content
@@ -85,46 +71,34 @@ INHERITED VIEWS (by module)
   [my_custom_module]
     my_custom_module.report_delivery_override
       inherits: stock.report_delivery_document_content
-      xpath: //div[@class='page']</td>
-                </tr>
-            </table>
-        </div>
+      xpath: //div[@class='page']</td></tr>
+        </table>
     </div>
 </section>
 
 <!-- FEATURES -->
-<section class="container py-4">
-    <div class="row text-center">
-        <div class="col-12">
-            <h2 style="color:#4C1D95;">Everything you need to know about any report</h2>
-        </div>
-    </div>
-    <div class="row mt-3">
-        <div class="col-md-6 mb-3">
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#4C1D95;">Everything you need to know about any report</h2>
+
+        <div class="oe_span6">
             <h4>&#x1F333; Full Dependency Tree</h4>
             <p>Visual hierarchy from the report entry-point down through every t-call and inherited view, regardless of nesting depth.</p>
-        </div>
-        <div class="col-md-6 mb-3">
-            <h4>&#x1F4E6; Module Ownership</h4>
-            <p>Instantly see which module (stock, sale, my_module...) owns each view &mdash; essential for debugging multi-module setups.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6 mb-3">
+            <br/>
             <h4>&#x1F517; T-Call Detection</h4>
             <p>Every template referenced via <code>t-call</code> is listed, including whether it exists in the database or is missing.</p>
-        </div>
-        <div class="col-md-6 mb-3">
-            <h4>&#x1F465; Sibling Views</h4>
-            <p>Discover related views sharing the same key prefix &mdash; often the source of unexpected content in your output.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6 mb-3">
+            <br/>
             <h4>&#x1F6E0; XPath Expressions</h4>
             <p>See the exact XPath used by each inherited view so you know precisely where in the DOM the injection happens.</p>
         </div>
-        <div class="col-md-6 mb-3">
+
+        <div class="oe_span6">
+            <h4>&#x1F4E6; Module Ownership</h4>
+            <p>Instantly see which module (stock, sale, my_module...) owns each view &mdash; essential for debugging multi-module setups.</p>
+            <br/>
+            <h4>&#x1F465; Sibling Views</h4>
+            <p>Discover related views sharing the same key prefix &mdash; often the source of unexpected content in your output.</p>
+            <br/>
             <h4>&#x26A1; Runs Locally &mdash; Always</h4>
             <p>No external server, no API key, no internet connection needed. The analysis engine is 100% inside your Odoo instance.</p>
         </div>
@@ -132,30 +106,27 @@ INHERITED VIEWS (by module)
 </section>
 
 <!-- HOW TO USE -->
-<section class="container py-4" style="background-color:#F3F4F6; border-radius:8px;">
-    <div class="row text-center">
-        <div class="col-12">
-            <h2 style="color:#4C1D95;">How to use it</h2>
-        </div>
-    </div>
-    <div class="row text-center mt-3">
-        <div class="col-md-3 mb-3">
-            <p style="font-size:32px; font-weight:800; color:#4C1D95;">1</p>
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#4C1D95;">How to use it</h2>
+
+        <div class="oe_span3" style="text-align:center; padding:12px;">
+            <p style="font-size:32px; font-weight:800; color:#4C1D95; margin:0 0 8px 0;">1</p>
             <h4>Enable Developer Mode</h4>
             <p>Settings &rarr; Activate the developer mode</p>
         </div>
-        <div class="col-md-3 mb-3">
-            <p style="font-size:32px; font-weight:800; color:#4C1D95;">2</p>
+        <div class="oe_span3" style="text-align:center; padding:12px;">
+            <p style="font-size:32px; font-weight:800; color:#4C1D95; margin:0 0 8px 0;">2</p>
             <h4>Open the Reports list</h4>
             <p>Settings &rarr; Technical &rarr; Reporting &rarr; Reports</p>
         </div>
-        <div class="col-md-3 mb-3">
-            <p style="font-size:32px; font-weight:800; color:#4C1D95;">3</p>
+        <div class="oe_span3" style="text-align:center; padding:12px;">
+            <p style="font-size:32px; font-weight:800; color:#4C1D95; margin:0 0 8px 0;">3</p>
             <h4>Select any report</h4>
             <p>Invoice, delivery slip, purchase order &mdash; any QWeb report</p>
         </div>
-        <div class="col-md-3 mb-3">
-            <p style="font-size:32px; font-weight:800; color:#22C55E;">4</p>
+        <div class="oe_span3" style="text-align:center; padding:12px;">
+            <p style="font-size:32px; font-weight:800; color:#22C55E; margin:0 0 8px 0;">4</p>
             <h4>Action &rarr; Analyze</h4>
             <p>A .txt file downloads automatically</p>
         </div>
@@ -163,71 +134,64 @@ INHERITED VIEWS (by module)
 </section>
 
 <!-- COMPATIBILITY -->
-<section class="container py-4 text-center">
-    <div class="row">
-        <div class="col-12">
-            <h2 style="color:#4C1D95;">Compatibility</h2>
-            <p>Works on Odoo Community and Enterprise, Odoo.sh, and On-Premise installations.</p>
+<section class="oe_container">
+    <div class="oe_row oe_spaced" style="text-align:center;">
+        <h2 class="oe_slogan" style="color:#4C1D95;">Compatibility</h2>
+        <p>Works on Odoo Community and Enterprise, Odoo.sh, and On-Premise installations.</p>
+        <br/>
+        <div class="oe_span2" style="text-align:center;">
+            <p style="background:#4C1D95; color:#fff; padding:8px 16px; border-radius:50px; font-weight:700;">Odoo 17</p>
         </div>
-    </div>
-    <div class="row mt-2">
-        <div class="col-md-2 col-4 mb-2">
-            <p style="background-color:#4C1D95; color:#fff; padding:8px 4px; border-radius:50px; font-weight:700; font-size:14px;">Odoo 17</p>
+        <div class="oe_span2" style="text-align:center;">
+            <p style="background:#4C1D95; color:#fff; padding:8px 16px; border-radius:50px; font-weight:700;">Odoo 18</p>
         </div>
-        <div class="col-md-2 col-4 mb-2">
-            <p style="background-color:#4C1D95; color:#fff; padding:8px 4px; border-radius:50px; font-weight:700; font-size:14px;">Odoo 18</p>
+        <div class="oe_span2" style="text-align:center;">
+            <p style="background:#4C1D95; color:#fff; padding:8px 16px; border-radius:50px; font-weight:700;">Odoo 19</p>
         </div>
-        <div class="col-md-2 col-4 mb-2">
-            <p style="background-color:#4C1D95; color:#fff; padding:8px 4px; border-radius:50px; font-weight:700; font-size:14px;">Odoo 19</p>
+        <div class="oe_span2" style="text-align:center;">
+            <p style="background:#059669; color:#fff; padding:8px 16px; border-radius:50px; font-weight:700;">Community</p>
         </div>
-        <div class="col-md-2 col-4 mb-2">
-            <p style="background-color:#059669; color:#fff; padding:8px 4px; border-radius:50px; font-weight:700; font-size:14px;">Community</p>
+        <div class="oe_span2" style="text-align:center;">
+            <p style="background:#059669; color:#fff; padding:8px 16px; border-radius:50px; font-weight:700;">Enterprise</p>
         </div>
-        <div class="col-md-2 col-4 mb-2">
-            <p style="background-color:#059669; color:#fff; padding:8px 4px; border-radius:50px; font-weight:700; font-size:14px;">Enterprise</p>
-        </div>
-        <div class="col-md-2 col-4 mb-2">
-            <p style="background-color:#059669; color:#fff; padding:8px 4px; border-radius:50px; font-weight:700; font-size:14px;">Odoo.sh</p>
+        <div class="oe_span2" style="text-align:center;">
+            <p style="background:#059669; color:#fff; padding:8px 16px; border-radius:50px; font-weight:700;">Odoo.sh</p>
         </div>
     </div>
 </section>
 
 <!-- OPEN SOURCE -->
-<section class="container py-4 text-center" style="background-color:#F3F4F6; border-radius:8px;">
-    <div class="row">
-        <div class="col-12">
-            <h2 style="color:#4C1D95;">Free &amp; Open Source</h2>
-            <p style="font-size:16px;">
-                Licensed under <strong>LGPL-3</strong>. Use it, fork it, contribute to it.
-                The code is fully readable &mdash; no obfuscation, no black boxes.
-            </p>
-            <p>
-                <strong>Source code:</strong>
-                <a href="https://github.com/JoseAleBerto/qweb-report-analyzer">
-                    github.com/JoseAleBerto/qweb-report-analyzer
-                </a>
-            </p>
-        </div>
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced" style="text-align:center;">
+        <h2 class="oe_slogan" style="color:#4C1D95;">Free &amp; Open Source</h2>
+        <p style="font-size:16px;">
+            Licensed under <strong>LGPL-3</strong>. Use it, fork it, contribute to it.
+            The code is fully readable &mdash; no obfuscation, no black boxes.
+        </p>
+        <p style="font-size:15px;">
+            <strong>Source code:</strong>
+            <a href="https://github.com/JoseAleBerto/qweb-report-analyzer">
+                github.com/JoseAleBerto/qweb-report-analyzer
+            </a>
+        </p>
     </div>
 </section>
 
 <!-- AUTHOR -->
-<section class="container py-4 text-center">
-    <div class="row">
-        <div class="col-12">
-            <h2 style="color:#4C1D95;">Author &amp; Support</h2>
-            <p style="font-size:16px;">Built by <strong>Jose Bertorelli</strong> &mdash; Odoo developer and consultant.</p>
-            <p>
-                <a href="mailto:josealebertorelli@gmail.com">josealebertorelli@gmail.com</a>
-                &nbsp;|&nbsp;
-                <a href="https://github.com/JoseAleBerto">github.com/JoseAleBerto</a>
-            </p>
-            <p style="color:#6B7280;">Found a bug or have a feature request? Open an issue on GitHub &mdash; contributions are very welcome!</p>
-        </div>
+<section class="oe_container">
+    <div class="oe_row oe_spaced" style="text-align:center;">
+        <h2 class="oe_slogan" style="color:#4C1D95;">Author &amp; Support</h2>
+        <p style="font-size:16px;">Built by <strong>Jose Bertorelli</strong> &mdash; Odoo developer and consultant.</p>
+        <p>
+            <a href="mailto:josealebertorelli@gmail.com">josealebertorelli@gmail.com</a>
+            &nbsp;|&nbsp;
+            <a href="https://github.com/JoseAleBerto">github.com/JoseAleBerto</a>
+        </p>
+        <p style="color:#6B7280;">Found a bug or have a feature request? Open an issue on GitHub &mdash; contributions are very welcome!</p>
     </div>
 </section>
 
-<!-- SEO -->
+<!-- SEO KEYWORDS -->
 <div style="display:none;">
 qweb report analyzer odoo qweb debug odoo report inheritance odoo view dependency
 odoo report debugger odoo xml views odoo t-call odoo xpath odoo report tree
