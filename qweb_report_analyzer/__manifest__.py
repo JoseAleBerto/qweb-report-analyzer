@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'QWeb Report Analyzer - View Dependency Tree',
-    'version': '19.0.1.0.0',
+    'version': '18.0.1.0.0',
     'category': 'Technical',
     'summary': 'Analyze QWeb report views: dependency tree, t-calls, XPaths, inherited views — free & open source',
     'description': """
@@ -29,11 +29,11 @@ How to use
 
 Compatible with Odoo 17, 18, and 19.
 
-Source code: https://github.com/josebertorelli/qweb-report-analyzer
+Source code: https://github.com/JoseAleBerto/qweb-report-analyzer
 Author: Jose Bertorelli — josealebertorelli@gmail.com
     """,
     'author': 'Jose Bertorelli',
-    'website': 'https://github.com/josebertorelli/qweb-report-analyzer',
+    'website': 'https://github.com/JoseAleBerto/qweb-report-analyzer',
     'license': 'LGPL-3',
     'price': 0.00,
     'currency': 'EUR',
