@@ -109,7 +109,7 @@ git push origin feature/your-feature-name
 
 **José Bertorelli**
 - Email: josealebertorelli@gmail.com
-- GitHub: [@josebertorelli](https://github.com/josebertorelli)
+- GitHub: [@josebertorelli](https://github.com/JoseAleBerto))
 
 ---
 
