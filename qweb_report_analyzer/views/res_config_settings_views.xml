@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_config_settings_view_form_qweb_analyzer" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.qweb.analyzer</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="priority">99</field>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app data-string="QWeb Report Analyzer" string="QWeb Report Analyzer"
+                     name="qweb_report_analyzer" groups="base.group_system">
+
+                    <block title="How to Use" name="qweb_analyzer_howto">
+                        <setting string="Analyze a Report" help="Follow these steps to analyze any QWeb report">
+                            <div class="content-group">
+                                <div class="row mt8">
+                                    <div class="col-12">
+                                        <div class="alert alert-success mb-0" role="alert">
+                                            <strong>✅ Free &amp; Open Source</strong> — no license key required.
+                                            Analysis runs entirely inside your Odoo instance.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt16">
+                                    <div class="col-12">
+                                        <p><strong>Steps:</strong></p>
+                                        <p>1. Go to <strong>Settings → Technical → Reporting → Reports</strong></p>
+                                        <p>2. Select any report from the list</p>
+                                        <p>3. Click <strong>Action → Analyze Report Views</strong></p>
+                                        <p>4. A <code>.txt</code> file with the full analysis will download automatically</p>
+                                    </div>
+                                </div>
+
+                                <div class="row mt16">
+                                    <div class="col-12">
+                                        <p><strong>What the analysis includes:</strong></p>
+                                        <p>• 📄 View dependency tree (base view + all inherited views)</p>
+                                        <p>• 🔗 All <code>t-call</code> references</p>
+                                        <p>• 🛠️ XPath expressions used for injection</p>
+                                        <p>• 📦 Module that owns each view</p>
+                                        <p>• 👥 Sibling views (same key prefix)</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-muted mt24">
+                                    <hr class="my-3"/>
+                                    <p>
+                                        <strong>Source code:</strong>
+                                        <a href="https://github.com/josebertorelli/qweb-report-analyzer" target="_blank">
+                                            github.com/josebertorelli/qweb-report-analyzer
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <strong>Author:</strong> José Bertorelli —
+                                        <a href="mailto:josealebertorelli@gmail.com">josealebertorelli@gmail.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </setting>
+                    </block>
+
+                </app>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
