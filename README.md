@@ -3,15 +3,14 @@
 **Free & Open Source Odoo addon** — Analyze any QWeb report and get a complete dependency tree of all views, t-calls, XPaths, and inherited views.
 
 [![License: LGPL-3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
-[![Odoo 17](https://img.shields.io/badge/Odoo-17-purple)](https://github.com/JoseAleBerto/qweb-report-analyzer/tree/17.0)
-[![Odoo 18](https://img.shields.io/badge/Odoo-18-purple)](https://github.com/JoseAleBerto/qweb-report-analyzer/tree/18.0)
 [![Odoo 19](https://img.shields.io/badge/Odoo-19-purple)](https://github.com/JoseAleBerto/qweb-report-analyzer/tree/19.0)
+[![Free](https://img.shields.io/badge/price-free-brightgreen)](https://apps.odoo.com)
 
 ---
 
 ## What it does
 
-Select any report in Odoo → **Action → Analyze Report Views** → download a `.txt` file with:
+Select any report in Odoo → **⚙ Gear → Analyze Report Views** → download a `.txt` file with:
 
 - 📄 **Dependency Tree** — full hierarchy from entry point to every view
 - 🔗 **T-Call references** — every template called via `t-call`
@@ -31,7 +30,7 @@ Search for **"QWeb Report Analyzer"** on [apps.odoo.com](https://apps.odoo.com) 
 ### From GitHub
 ```bash
 # Clone the branch matching your Odoo version
-git clone -b 18.0 https://github.com/JoseAleBerto/qweb-report-analyzer.git
+git clone -b 19.0 https://github.com/JoseAleBerto/qweb-report-analyzer.git
 
 # Copy to your addons path
 cp -r qweb-report-analyzer/qweb_report_analyzer /path/to/your/addons/
@@ -43,11 +42,11 @@ cp -r qweb-report-analyzer/qweb_report_analyzer /path/to/your/addons/
 
 ## Usage
 
-1. Go to **Settings → Technical → Reporting → Reports**
-   *(Enable developer mode if you don't see the Technical menu)*
-2. Select any report from the list
-3. Click **Action → Analyze Report Views**
-4. A `.txt` file downloads automatically
+1. Enable **Developer Mode** (Settings → Activate Developer Mode)
+2. Go to **Settings → Technical → Reporting → Reports**
+3. Select any report from the list
+4. Click the **gear icon (⚙) → Analyze Report Views**
+5. A `.txt` file downloads automatically
 
 ### Sample output
 
@@ -76,11 +75,7 @@ cp -r qweb-report-analyzer/qweb_report_analyzer /path/to/your/addons/
 
 | Branch | Odoo Version | Status |
 |--------|-------------|--------|
-| `17.0` | Odoo 17     | ✅ Maintained |
-| `18.0` | Odoo 18     | ✅ Maintained |
-| `19.0` | Odoo 19     | ✅ Maintained |
-
-Works on **Odoo.sh**, **On-Premise**, and **Community/Enterprise**.
+| `19.0` | Odoo 19 — Community, Enterprise, Odoo Online | ✅ Maintained |
 
 ---
 
@@ -89,10 +84,10 @@ Works on **Odoo.sh**, **On-Premise**, and **Community/Enterprise**.
 Pull requests are welcome! Please open an issue first to discuss what you'd like to change.
 
 ```bash
-git clone -b 18.0 https://github.com/josebertorelli/qweb-report-analyzer.git
+git clone -b 19.0 https://github.com/JoseAleBerto/qweb-report-analyzer.git
 cd qweb-report-analyzer
-# make your changes
 git checkout -b feature/your-feature-name
+# make your changes
 git push origin feature/your-feature-name
 # open a pull request
 ```
@@ -109,7 +104,7 @@ git push origin feature/your-feature-name
 
 **José Bertorelli**
 - Email: josealebertorelli@gmail.com
-- GitHub: [@josebertorelli](https://github.com/JoseAleBerto))
+- GitHub: [@JoseAleBerto](https://github.com/JoseAleBerto)
 
 ---
 
