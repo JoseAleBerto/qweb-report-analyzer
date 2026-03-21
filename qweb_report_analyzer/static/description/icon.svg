@@ -20,5 +20,4 @@
     <line x1="55" y1="55" x2="62" y2="59" stroke="white" stroke-width="1.5"/>
     <line x1="55" y1="55" x2="69" y2="59" stroke="white" stroke-width="1.5"/>
   </g>
-  <text x="80" y="25" font-size="12" font-weight="bold" fill="#FFD700">PRO</text>
 </svg>
