@@ -31,7 +31,7 @@ Search for **"QWeb Report Analyzer"** on [apps.odoo.com](https://apps.odoo.com) 
 ### From GitHub
 ```bash
 # Clone the branch matching your Odoo version
-git clone -b 18.0 https://github.com/josebertorelli/qweb-report-analyzer.git
+git clone -b 18.0 https://github.com/JoseAleBerto/qweb-report-analyzer.git
 
 # Copy to your addons path
 cp -r qweb-report-analyzer/qweb_report_analyzer /path/to/your/addons/
