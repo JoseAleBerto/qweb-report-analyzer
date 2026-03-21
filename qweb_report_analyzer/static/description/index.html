@@ -2,7 +2,7 @@
      QWeb Report Analyzer &#8212; Odoo App Store Product Page
      Author: Jos&#233; Bertorelli &#8212; josealebertorelli@gmail.com
      Free & Open Source (LGPL-3)
- 
+
      IMPORTANT NOTE FOR MAINTAINERS:
      Odoo's App Store sanitizer strips ALL background/background-color
      properties and flexbox CSS from inline styles. This file is
@@ -11,7 +11,7 @@
      margin, border, border-radius, display:inline-block, line-height.
      Columns: use oe_span2/3/4/6/12 classes, NOT flex/grid.
      ============================================================ -->
- 
+
 <!-- &#9472;&#9472; HERO &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; -->
 <section class="oe_container" style="padding: 48px 24px; text-align: center;">
     <div class="oe_row">
@@ -27,7 +27,7 @@
         </strong>
     </div>
 </section>
- 
+
 <!-- &#9472;&#9472; PAIN POINTS &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; -->
 <section class="oe_container oe_dark" style="padding: 40px 24px;">
     <div class="oe_row oe_spaced">
@@ -49,7 +49,7 @@
         </div>
     </div>
 </section>
- 
+
 <!-- &#9472;&#9472; SOLUTION &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; -->
 <section class="oe_container" style="padding: 40px 24px; text-align: center;">
     <div class="oe_row">
@@ -58,7 +58,7 @@
             Select any report &#8594; <strong>Action &#8594; Analyze Report Views</strong> &#8594; download a .txt file
             with the complete dependency map of every view involved.
         </p>
- 
+
         <!-- Sample Output Box &#8212; using table since pre gets sanitized -->
         <table style="width: 100%; border-collapse: collapse; font-family: monospace; font-size: 12px; color: #1F2937; border: 2px solid #4C1D95; border-radius: 8px; margin: 0 auto; max-width: 720px;">
             <thead>
@@ -73,24 +73,24 @@
                     <td style="padding: 16px 20px; white-space: pre-wrap; line-height: 1.8; text-align: left;">================================================================================
 ========================= VIEW DEPENDENCY TREE =================================
 ================================================================================
- 
+
 [REPORT] stock.report_delivery_document
     Module: stock
- 
+
 +-- stock.report_delivery_document_content
     Module: stock
     &lt;t-call&gt; stock.report_delivery_document_line
     &lt;t-call&gt; web.external_layout
- 
+
     +-- my_custom_module.report_delivery_override
         Module: my_custom_module
         &lt;inherits&gt; stock.report_delivery_document_content
         &lt;xpath&gt; //div[@class='page']   &lt;-- HERE is your override
- 
+
 ================================================================================
 ================== INHERITED VIEWS (by module) =================================
 ================================================================================
- 
+
   [my_custom_module]
     my_custom_module.report_delivery_override
       inherits: stock.report_delivery_document_content
@@ -100,12 +100,12 @@
         </table>
     </div>
 </section>
- 
+
 <!-- &#9472;&#9472; FEATURES &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; -->
 <section class="oe_container oe_dark" style="padding: 40px 24px;">
     <div class="oe_row oe_spaced">
         <h2 class="oe_slogan" style="color: #4C1D95;">Everything you need to know about any report</h2>
- 
+
         <div class="oe_span6" style="padding: 8px;">
             <p style="font-size: 15px; color: #374151; margin-bottom: 16px;">
                 <strong style="color: #4C1D95;">&#127795; Full Dependency Tree</strong><br/>
@@ -120,7 +120,7 @@
                 See the exact XPath used by each inherited view so you know precisely where in the DOM the injection happens.
             </p>
         </div>
- 
+
         <div class="oe_span6" style="padding: 8px;">
             <p style="font-size: 15px; color: #374151; margin-bottom: 16px;">
                 <strong style="color: #4C1D95;">&#128230; Module Ownership</strong><br/>
@@ -137,20 +137,20 @@
         </div>
     </div>
 </section>
- 
+
 <!-- &#9472;&#9472; HOW TO USE &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; -->
 <!--
     &#128248; SCREENSHOT GUIDE &#8212; Replace the placeholders below with real screenshots.
- 
+
     Screenshot 1 (steps): Show the Reports list in Settings > Technical > Reporting > Reports
                           with the Action menu open showing "Analyze Report Views".
                           Frame it with a dark background, add a red arrow pointing to the Action button.
                           Title: "One click from any report"
- 
+
     Screenshot 2 (output): Show the downloaded .txt file open in a text editor or the
                            Odoo attachment preview. Highlight the tree structure section.
                            Title: "Complete dependency map &#8212; instantly"
- 
+
     Screenshot 3 (use case): Show the same analysis next to an Odoo report form,
                              so the viewer can connect the analysis output to a real report.
                              Title: "Know exactly which module is modifying your report"
@@ -180,7 +180,7 @@
         </div>
     </div>
 </section>
- 
+
 <!-- &#9472;&#9472; COMPATIBILITY &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; -->
 <section class="oe_container oe_dark" style="padding: 32px 24px; text-align: center;">
     <div class="oe_row">
@@ -194,7 +194,7 @@
         <span style="color: #059669; font-weight: 700; font-size: 15px; padding: 8px 20px; border: 2px solid #059669; border-radius: 50px; display: inline-block; margin: 4px;">Odoo.sh &#10003;</span>
     </div>
 </section>
- 
+
 <!-- &#9472;&#9472; OPEN SOURCE &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; -->
 <section class="oe_container" style="padding: 32px 24px; text-align: center;">
     <div class="oe_row">
@@ -211,7 +211,7 @@
         </div>
     </div>
 </section>
- 
+
 <!-- &#9472;&#9472; AUTHOR / SUPPORT &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; -->
 <section class="oe_container oe_dark" style="padding: 32px 24px; text-align: center;">
     <div class="oe_row">
@@ -229,7 +229,7 @@
         </p>
     </div>
 </section>
- 
+
 <!-- &#9472;&#9472; SEO KEYWORDS (hidden from display, indexed by App Store) &#9472; -->
 <section style="display: none;">
     qweb report analyzer odoo qweb debug odoo report inheritance odoo view dependency
