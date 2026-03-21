@@ -3,9 +3,9 @@
 **Free & Open Source Odoo addon** — Analyze any QWeb report and get a complete dependency tree of all views, t-calls, XPaths, and inherited views.
 
 [![License: LGPL-3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
-[![Odoo 17](https://img.shields.io/badge/Odoo-17-purple)](https://github.com/josebertorelli/qweb-report-analyzer/tree/17.0)
-[![Odoo 18](https://img.shields.io/badge/Odoo-18-purple)](https://github.com/josebertorelli/qweb-report-analyzer/tree/18.0)
-[![Odoo 19](https://img.shields.io/badge/Odoo-19-purple)](https://github.com/josebertorelli/qweb-report-analyzer/tree/19.0)
+[![Odoo 17](https://img.shields.io/badge/Odoo-17-purple)](https://github.com/JoseAleBerto/qweb-report-analyzer/tree/17.0)
+[![Odoo 18](https://img.shields.io/badge/Odoo-18-purple)](https://github.com/JoseAleBerto/qweb-report-analyzer/tree/18.0)
+[![Odoo 19](https://img.shields.io/badge/Odoo-19-purple)](https://github.com/JoseAleBerto/qweb-report-analyzer/tree/19.0)
 
 ---
 
