@@ -7,7 +7,7 @@
             <field name="binding_model_id" ref="base.model_ir_actions_report"/>
             <field name="binding_view_types">list,form</field>
             <field name="state">action</field>
-            <field name="action_id" ref="views.action_report_analyzer_wizard"/>
+            <field name="action_id" ref="action_report_analyzer_wizard"/>
         </record>
     </data>
 </odoo>
