@@ -3,7 +3,7 @@
 **Free & Open Source Odoo addon** — Analyze any QWeb report and get a complete dependency tree of all views, t-calls, XPaths, and inherited views.
 
 [![License: LGPL-3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
-[![Odoo 19](https://img.shields.io/badge/Odoo-19-purple)](https://github.com/JoseAleBerto/qweb-report-analyzer/tree/19.0)
+[![Odoo 15](https://img.shields.io/badge/Odoo-15-purple)](https://github.com/JoseAleBerto/qweb-report-analyzer/tree/15.0)
 [![Free](https://img.shields.io/badge/price-free-brightgreen)](https://apps.odoo.com)
 
 ---
@@ -30,7 +30,7 @@ Search for **"QWeb Report Analyzer"** on [apps.odoo.com](https://apps.odoo.com) 
 ### From GitHub
 ```bash
 # Clone the branch matching your Odoo version
-git clone -b 19.0 https://github.com/JoseAleBerto/qweb-report-analyzer.git
+git clone -b 15.0 https://github.com/JoseAleBerto/qweb-report-analyzer.git
 
 # Copy to your addons path
 cp -r qweb-report-analyzer/qweb_report_analyzer /path/to/your/addons/
@@ -75,7 +75,7 @@ cp -r qweb-report-analyzer/qweb_report_analyzer /path/to/your/addons/
 
 | Branch | Odoo Version | Status |
 |--------|-------------|--------|
-| `19.0` | Odoo 19 — Community, Enterprise, Odoo Online | ✅ Maintained |
+| `19.0` | Odoo 15 — Community, Enterprise, Odoo Online | ✅ Maintained |
 
 ---
 
@@ -84,7 +84,7 @@ cp -r qweb-report-analyzer/qweb_report_analyzer /path/to/your/addons/
 Pull requests are welcome! Please open an issue first to discuss what you'd like to change.
 
 ```bash
-git clone -b 19.0 https://github.com/JoseAleBerto/qweb-report-analyzer.git
+git clone -b 15.0 https://github.com/JoseAleBerto/qweb-report-analyzer.git
 cd qweb-report-analyzer
 git checkout -b feature/your-feature-name
 # make your changes

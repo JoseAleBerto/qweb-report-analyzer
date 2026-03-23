@@ -1,6 +1,6 @@
 {
     'name': 'QWeb Report Analyzer - View Dependency Tree',
-    'version': '19.0.1.0.6',
+    'version': '15.0.1.0.0',
     'category': 'Technical',
     'summary': 'Analyze QWeb report views: dependency tree, t-calls, XPaths, inherited views — free & open source',
     'description': 'Analyze any QWeb report and get a full dependency tree with inherited views, t-calls, XPaths and module ownership. Free and open source.',
