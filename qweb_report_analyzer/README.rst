@@ -6,8 +6,8 @@ QWeb Report Analyzer
    :target: https://www.gnu.org/licenses/lgpl-3.0.html
    :alt: License: LGPL-3
 
-.. image:: https://img.shields.io/badge/Odoo-19-purple.svg
-   :alt: Odoo 19
+.. image:: https://img.shields.io/badge/Odoo-14-purple.svg
+   :alt: Odoo 14
 
 .. image:: https://img.shields.io/badge/free-%E2%9C%94-brightgreen.svg
    :alt: Free & Open Source
@@ -39,7 +39,7 @@ and module origins. One click. No server. **100% free.**
 **Compatibility**
 -----------------
 
-* Odoo 19.0 — Community, Enterprise, and Odoo Online
+* Odoo 14.0 — Community, Enterprise, and Odoo Online
 
 **Installation**
 ----------------
