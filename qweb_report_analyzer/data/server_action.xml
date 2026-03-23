@@ -6,13 +6,8 @@
             <field name="model_id" ref="base.model_ir_actions_report"/>
             <field name="binding_model_id" ref="base.model_ir_actions_report"/>
             <field name="binding_view_types">list,form</field>
-            <field name="state">code</field>
-            <field name="code"><![CDATA[
-if not env.context.get('active_id'):
-    raise UserError("Please select a report first.\n\nGo to: Settings > Technical > Reports > Select one > Action")
-
-action = env['report.analyzer'].analyze_report(env.context['active_id'])
-]]></field>
+            <field name="state">action</field>
+            <field name="action_id" ref="action_report_analyzer_wizard"/>
         </record>
     </data>
 </odoo>
